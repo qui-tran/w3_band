@@ -3,6 +3,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* box-sizing:làm cho phần tử có kích thước chính xác khi bạn khai báo,
+   tránh việc cộng thêm các phần border và padding sẽ gây ra rắc rối */
 }
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -100,10 +102,29 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   /* cách viết ngắn gọn hơn,
   gôm nhiều loại thuộc tính background chung một dòng */
 }
+
+#slider .text-content {
+  position: absolute;
+  bottom: 48px;
+  color: white;
+  width: 100%;
+}
+#slider .text-heading {
+  margin-bottom: 25px;
+  text-align: center;
+  font-weight: 400;
+  /* font-weight: đi từ 100 to 700 */
+  font-size: 24px;
+}
+#slider .text-description {
+  text-align: center;
+  font-weight: bold;
+  font-size: 15px;
+}
 #content {
 }
 #content .content-section{
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
   padding: 64px;
 }
@@ -130,24 +151,37 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   font-size: 15px;
   line-height: 1.5;
 }
+.imgAbout{
+  padding: 32px 0px;
+}
+.tour-section{
+  background-color: black;
+  
+}
+.ticket-list{
+  list-style: none;
+  background-color: white;
+}
+.ticket-list li{
+  font-size: 15px;
+  padding: 11px 16px;
+  border-bottom:1px solid #ddd;
+  color: #757575;
+}
+.ticket-list .sold-out{
+  padding: 0px 8px;
+ background-color: #f44336;
+ margin-left: 16px;
+  
+}
+.ticket-list .quantity{
+  float: right;
+  border-radius: 50%;
+  background-color: #000;
+    color: #fff;
+    padding: 0px 8px;
+
+}
 #footer {
 }
 
-#slider .text-content {
-  position: absolute;
-  bottom: 48px;
-  color: white;
-  width: 100%;
-}
-#slider .text-heading {
-  margin-bottom: 25px;
-  text-align: center;
-  font-weight: 400;
-  /* font-weight: đi từ 100 to 700 */
-  font-size: 24px;
-}
-#slider .text-description {
-  text-align: center;
-  font-weight: bold;
-  font-size: 15px;
-}
