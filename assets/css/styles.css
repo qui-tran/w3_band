@@ -7,9 +7,11 @@
    tránh việc cộng thêm các phần border và padding sẽ gây ra rắc rối */
 }
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
 }
-
+.clear {
+  clear: both;
+}
 #main {
 }
 #header {
@@ -179,5 +181,54 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   color: #fff;
   padding: 0px 8px;
 }
+.place-list {
+  margin: 32px -8px 0px;
+  padding-bottom: 50px;
+}
+.place-item {
+  float: left;
+  width: 33.33333%;
+  padding: 0px 8px;
+}
+.place-img {
+  width: 100%;
+}
+.place-img:hover {
+  opacity: 0.6;
+}
+.place-content {
+  background-color: white;
+  padding: 16px;
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.title-place {
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.date-place {
+  opacity: 0.6;
+  color: #000;
+}
+.detals-place {
+}
+.buy-tick {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+
+  display: inline-block;
+  border-radius: 2.5px;
+}
+.buy-tick:hover {
+  background-color: #ccc;
+  color: #000;
+
+  text-decoration: none;
+}
+
 #footer {
 }
