@@ -123,13 +123,13 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
 }
 #content {
 }
-#content .content-section{
+#content .content-section {
   max-width: 900px;
   margin: auto;
   padding: 64px;
 }
-.section-heading{
-  font-family: "Segoe UI",Arial,sans-serif;
+.section-heading {
+  font-family: "Segoe UI", Arial, sans-serif;
   font-weight: 400;
   /* font-weight: thẻ hiện độ dày của nét chữ */
   font-size: 30px;
@@ -137,7 +137,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   letter-spacing: 4px;
   /* letter-spacing: ảnh hưởng đến khoảng cách từng chữ cái trong một từ */
 }
-.section-sub-heading{
+.section-sub-heading {
   font-style: italic;
   /* chữ nghiên chữ đậm đồ đó */
   font-size: 15px;
@@ -145,43 +145,39 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   margin: 25px 0;
   opacity: 0.7;
 }
-.about{
+.about {
   text-align: justify;
   font-family: "Lato", sans-serif;
   font-size: 15px;
   line-height: 1.5;
 }
-.imgAbout{
+.imgAbout {
   padding: 32px 0px;
 }
-.tour-section{
+.tour-section {
   background-color: black;
-  
 }
-.ticket-list{
+.ticket-list {
   list-style: none;
   background-color: white;
 }
-.ticket-list li{
+.ticket-list li {
   font-size: 15px;
   padding: 11px 16px;
-  border-bottom:1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   color: #757575;
 }
-.ticket-list .sold-out{
+.ticket-list .sold-out {
   padding: 0px 8px;
- background-color: #f44336;
- margin-left: 16px;
-  
+  background-color: #f44336;
+  margin-left: 16px;
 }
-.ticket-list .quantity{
+.ticket-list .quantity {
   float: right;
   border-radius: 50%;
   background-color: #000;
-    color: #fff;
-    padding: 0px 8px;
-
+  color: #fff;
+  padding: 0px 8px;
 }
 #footer {
 }
-
