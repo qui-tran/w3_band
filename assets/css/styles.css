@@ -219,16 +219,13 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   background-color: #000;
   color: #fff;
   text-decoration: none;
-
   display: inline-block;
   border-radius: 2.5px;
 }
 .buy-tick:hover {
   background-color: #ccc;
   color: #000;
-
   text-decoration: none;
 }
-
 #footer {
 }
