@@ -12,6 +12,33 @@ html {
 .clear {
   clear: both;
 }
+
+.rowK {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+.rowK::after {
+  /* rowK::after nghĩa là 
+  điền vào điểm cuối nằm trong thẻ rowK */
+  content: "";
+  display: block;
+  clear: both;
+}
+.colK {
+  float: left;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.colK-2 {
+  width: 50%;
+}
+.colK-3 {
+  width: 33.33333%;
+}
+.colK-full {
+  width: 100%;
+}
+/* main css  */
 #main {
 }
 #header {
@@ -144,7 +171,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   /* chữ nghiên chữ đậm đồ đó */
   font-size: 15px;
   text-align: center;
-  margin: 25px 0;
+  margin: 15px 0;
   opacity: 0.7;
 }
 .about {
@@ -182,14 +209,10 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   padding: 0px 8px;
 }
 .place-list {
-  margin: 32px -8px 0px;
-  padding-bottom: 50px;
+  margin-top: 32px;
+  margin-bottom: 48px;
 }
-.place-item {
-  float: left;
-  width: 33.33333%;
-  padding: 0px 8px;
-}
+
 .place-img {
   width: 100%;
 }
@@ -226,6 +249,38 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   background-color: #ccc;
   color: #000;
   text-decoration: none;
+}
+.submit-ne {
+  padding: 8px 16px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  float: right;
+}
+.submit-ne:hover {
+  background-color: #ccc;
+  color: #000;
+}
+/* contact form  */
+.contact-formK {
+  padding-top: 32px;
+}
+.thong-tin {
+  font-size: 18px;
+}
+.nope {
+  margin-bottom: 0px;
+}
+.nope2 {
+  width: 30px;
+}
+/* .input-thong-tin {
+  font-size: 15px;
+} */
+.input-ne {
+  padding: 6px;
+  width: 100%;
+  border: 1px solid #ccc;
 }
 #footer {
 }
