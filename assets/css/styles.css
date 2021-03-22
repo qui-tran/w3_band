@@ -79,11 +79,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   padding: 0 24px;
   display: block;
 }
-#nav > li:hover > a .logo {
-  /* khai bao theo dạng > thể hiển mối quan hệ trực tiếp của các class */
-  color: black;
-  background-color: #ccc;
-}
+
 #nav .subnav a:hover,
 #nav > li:hover > a {
   /* khai bao theo dạng > thể hiển mối quan hệ trực tiếp của các class */
