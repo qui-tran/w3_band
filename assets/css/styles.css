@@ -256,6 +256,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   color: #fff;
   border: none;
   float: right;
+  cursor: pointer;
 }
 .submit-ne:hover {
   background-color: #ccc;
@@ -282,5 +283,25 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   width: 100%;
   border: 1px solid #ccc;
 }
+
+.map-section img {
+  width: 100%;
+}
+
 #footer {
+  padding: 64px 16px;
+  text-align: center;
+}
+#footer .fab {
+  font-size: 24px;
+  color: #666666;
+}
+#footer .powered {
+  color: #666666;
+  font-size: 15px;
+  margin: 15px 0px;
+}
+#footer .w3css {
+  text-decoration: underline;
+  color: #666666;
 }
