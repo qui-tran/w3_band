@@ -8,6 +8,7 @@
 }
 html {
   font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
 }
 .clear {
   clear: both;
@@ -78,7 +79,11 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   padding: 0 24px;
   display: block;
 }
-
+#nav > li:hover > a .logo {
+  /* khai bao theo dạng > thể hiển mối quan hệ trực tiếp của các class */
+  color: black;
+  background-color: #ccc;
+}
 #nav .subnav a:hover,
 #nav > li:hover > a {
   /* khai bao theo dạng > thể hiển mối quan hệ trực tiếp của các class */
@@ -295,6 +300,10 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
 #footer .fab {
   font-size: 24px;
   color: #666666;
+}
+.w3css:hover,
+#footer .fab:hover {
+  opacity: 0.7;
 }
 #footer .powered {
   color: #666666;
