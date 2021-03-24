@@ -1,0 +1,5 @@
+Giá trị xác định chiều ngang thiết bị để thực hiện reponsive (đúng chuẩn tầm 99%)
+
+PC: >= 1024px
+Tablet: >=740  và <1024
+Mobile: <740

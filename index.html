@@ -1,29 +1,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> dòng này để code chạy được trên các bản cũ của IE -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Band</title>
+    <!-- viewport chính là cái nhìn trên màn hình user, được tự động điều chỉnh nhờ các thẻ content của nó
+    initial-scale là độ zoom -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/mobile.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script
       src="https://kit.fontawesome.com/e13ace7e00.js"
       crossorigin="anonymous"
     ></script>
     <link rel="icon" href="/assets/img/k_final.png" type="image/gif">
+    <title>The Band</title>
   </head>
   <body>
     <div id="main">
       <div id="header">
         <!-- Begin: nav  -->
+        
         <ul id="nav">
-          <li><img src="/assets/img/k_final.png" alt="nope"></li>
-          <li><a href="#">HOME</a></li>
+          <li  class="ngu-logo"><a href="#"><img class="img-logo" src="/assets/img/k_final.png" alt="nope"></a></li>
           <li><a href="#band">BAND</a></li>
           <li><a href="#tour">TOUR</a></li>
           <li><a href="#contact">CONTACT</a></li>
           <li>
-            <a class="kk" href="">MORE <i class="fas fa-caret-down"></i></i></a>
+            <a class="kk" href="#">MORE <i class="fas fa-caret-down"></i></i></a>
             <ul class="subnav kk">
               <li><a href="#">Merchandisa</a></li>
               <li><a href="#">Extras</a></li>
@@ -36,6 +39,9 @@
         <!-- Begin: search button  -->
         <div class="search">
           <i class="fas fa-search"></i>
+        </div>
+        <div id="mobile-bar" class="barr">
+          <i class="fas fa-bars"></i>
         </div>
         <!-- End: search button  -->
 
@@ -189,5 +195,32 @@
         <!-- END: MAfooterP  -->
 
     </div>
+
+    <script>
+      //lấy sự kiện click và close/display barMenu
+      var header = document.getElementById('header');
+      var moblie = document.getElementById('mobile-bar');
+
+      var valueHeader = header.clientHeight;
+      moblie.onclick = function(){
+        var isClose = header.clientHeight === valueHeader;
+        if(isClose){
+          header.style.height = 'auto';
+        }else{
+          header.style.height = null;
+
+        }
+      }
+      //tự động đóng khi click menu
+      var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+      for (var i=0;i<menuItems.length;i++){
+        var menuItem = menuItems[i];
+
+        menuItem.onclick = function(){
+          header.style.height = null;
+
+        }
+      }
+    </script>
   </body>
 </html>

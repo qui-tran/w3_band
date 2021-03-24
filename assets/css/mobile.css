@@ -1,0 +1,17 @@
+@media (max-width: 46.1875em){
+    #nav > li {
+        display: block;
+        
+      }
+      .ngu-logo{
+        margin-top: 46px;
+    }
+    #header .fa-search {
+        display: none;
+      }
+}
+@media (min-width: 46.25em){
+    #header .fa-bars{
+        display: none;
+    }
+}

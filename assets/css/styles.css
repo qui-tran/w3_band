@@ -51,6 +51,7 @@ html {
   right: 0;
   z-index: 1;
   /* z-index: ;  là thể hiện chiều sâu trên page, số càng to thì nó càng nổi lên */
+  overflow: hidden;
 }
 #nav {
   display: inline-block;
@@ -106,14 +107,31 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   line-height: 38px;
   min-width: 160px;
 }
+.barr,
 .search {
   float: right;
 }
+
 #header .search:hover {
   background-color: #f44336;
   cursor: pointer;
 }
+#header .barr:hover{
+  background-color: #ccc;
+  
+  cursor: pointer;
+}
+#header .barr:hover .fa-bars{
+  color: #000;
+}
+
 #header .fa-search {
+  color: white;
+  font-size: 16px;
+  line-height: 46px;
+  padding: 0 24px;
+}
+#header .fa-bars{
   color: white;
   font-size: 16px;
   line-height: 46px;
@@ -154,9 +172,12 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
 #content {
 }
 #content .content-section {
-  max-width: 900px;
-  margin: auto;
-  padding: 64px;
+  width: 800px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 16px 112px 16px;
+  
 }
 .section-heading {
   font-family: "Segoe UI", Arial, sans-serif;
@@ -309,4 +330,14 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
 #footer .w3css {
   text-decoration: underline;
   color: #666666;
+}
+.ngu-logo{
+  
+}
+.img-logo{
+  position: fixed;
+  top: 7px;
+  left: 10px;
+  
+
 }
