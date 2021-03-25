@@ -24,6 +24,13 @@
     .ngu-logo{
         margin-top: 46px;
     }
+    .rounded{
+        width: 100%;
+    }
+    .colK{
+        width: 100%;
+        padding-bottom: 16px;
+    }
     
       
 }
