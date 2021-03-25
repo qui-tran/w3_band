@@ -1,14 +1,31 @@
 @media (max-width: 46.1875em){
-    #nav > li {
-        display: block;
-        
-      }
-      .ngu-logo{
-        margin-top: 46px;
+    #header{
+        overflow: hidden;
     }
     #header .fa-search {
         display: none;
       }
+    #nav {
+        display: block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: black;
+    }
+    #nav .subnav a{
+        color: white;
+        padding: 4px 40px;
+        display: block;
+    }
+    #nav > li {
+        display: block;
+        
+      }
+    .ngu-logo{
+        margin-top: 46px;
+    }
+    
+      
 }
 @media (min-width: 46.25em){
     #header .fa-bars{

@@ -51,7 +51,6 @@ html {
   right: 0;
   z-index: 1;
   /* z-index: ;  là thể hiện chiều sâu trên page, số càng to thì nó càng nổi lên */
-  overflow: hidden;
 }
 #nav {
   display: inline-block;
@@ -66,6 +65,9 @@ html {
 #nav li {
   position: relative;
   /* relative sẽ làm cho class đó phụ thuộc vào trục của trình duyệt  */
+}
+#nav >li:first-child{
+  display: inline-block;
 }
 #nav > li > a {
   color: white;
@@ -107,9 +109,13 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   line-height: 38px;
   min-width: 160px;
 }
-.barr,
 .search {
   float: right;
+}
+.barr{
+  float: right;
+  position: absolute;
+  top: 0;right: 0;
 }
 
 #header .search:hover {
@@ -136,6 +142,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   font-size: 16px;
   line-height: 46px;
   padding: 0 24px;
+  
 }
 
 #slider {
