@@ -56,5 +56,13 @@
         line-height: 2;
 
     }
+    .buy-tick {
+        width: 100%;
+        text-align: center;
+    }
+    .submit-ne{
+        width: 100%;
+        text-align: center;
+    }
     
 }

@@ -272,6 +272,7 @@ giúp text nằm đầy đằn trên heading và giúp tách từng dòng dễ �
   text-decoration: none;
   display: inline-block;
   border-radius: 2.5px;
+  
 }
 .buy-tick:hover {
   background-color: #ccc;
